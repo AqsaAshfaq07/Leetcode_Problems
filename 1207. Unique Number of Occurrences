@@ -1,0 +1,7 @@
+class Solution:
+    def uniqueOccurrences(self, arr: List[int]) -> bool:
+        hash_map = collections.Counter(arr)
+        return  len(list(hash_map.values())) == len(set(hash_map.values()))
+
+# Time Complexity -- O(n)
+# Space Complexity -- O(m) 
